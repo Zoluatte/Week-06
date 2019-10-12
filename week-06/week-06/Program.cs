@@ -4,14 +4,7 @@ class Program
 {
     static void Main()
     {
-        int val;   // do not initial value
-        refMethod(out val);
-        Console.WriteLine(val);
-        Console.ReadLine();
-    }
-
-    static void refMethod(out int i)
-    {
-        i = i + 1;
+        double GPA = 1.95;
+        Console.WriteLine("You are " + (GPA >= 2.0 ? "pass" : "fall"));
     }
 }
