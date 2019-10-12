@@ -10,16 +10,12 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            byte a = 3;
-            byte b = 5;
-
-            Console.WriteLine(a | b);
-            Console.WriteLine(a & b);
-            Console.WriteLine(a ^ b);
-            Console.WriteLine(~a & b);
-            Console.WriteLine(a << 1);
-            Console.WriteLine(a << 2);
-            Console.WriteLine(a >> 1);
+            string hello = "Hello";
+            string world = "World";
+            string helloWorld = hello + world;
+            Console.WriteLine(helloWorld);
+            string helloWorld555 = helloWorld + " " + 555;
+            Console.WriteLine(helloWorld555);
 
         }
     }
