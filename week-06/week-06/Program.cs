@@ -3,29 +3,18 @@
 class Program
 {
     static void Main()
-
     {
-        int number;
+        double myDouble = 9.9d;
+        Console.WriteLine(myDouble);
 
-        Console.WriteLine("Enter Interger Number : ");
+        long myLong = (long)myDouble;
+        Console.WriteLine(myLong);
 
-        number = int.Parse(Console.ReadLine());
-        Banana(number);
+        myDouble = 9e9d;
+        Console.WriteLine(myDouble);
 
-        Console.ReadLine();
-
-    }
-
-    static void Banana(int number)
-    {
-        if ((number % 2) == 0)
-        {
-
-            Console.WriteLine("{0} Is Even", number);
-        }
-        else
-        {
-            Console.WriteLine("{0} Is Odd", number);
-        }
+        int myInt = (int)myDouble;
+        Console.WriteLine(myInt);
+        Console.WriteLine(int.MinValue);
     }
 }
