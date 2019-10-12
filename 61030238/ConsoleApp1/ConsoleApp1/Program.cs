@@ -13,7 +13,7 @@ namespace ConsoleApp1
             sayHello();
             Console.ReadLine();
         }
-        void sayHello()
+        static void sayHello()
         {
             Console.WriteLine("Hello World.");
         }
