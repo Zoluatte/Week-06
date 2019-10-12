@@ -142,7 +142,7 @@ class Program
 
 ``` text
 
-
+Error
 
 
 ```
@@ -176,12 +176,7 @@ class Program
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![method](./images/method1.PNG)
 
 ## หมายเหตุ
 
@@ -216,12 +211,7 @@ class Program
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![method](./images/method2.PNG)
 
 ## การสร้างเมธอดที่รับพารามิเตอร์และส่งค่ากลับ
 
@@ -253,12 +243,7 @@ class Program
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![method](./images/method3.PNG)
  
 ## ตัวอย่างโปรแกรมที่เมธอดมีการเรียกใช้ตัวเอง (Recursion)
 
@@ -285,12 +270,8 @@ class Program
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
+![method](./images/method4.PNG)
 
-
-
-
-```
 
 ## การสร้างเมธอดที่รับพารามิเตอร์แบบไม่จำกัดจำนวน
 
@@ -321,12 +302,8 @@ class Program
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
+![method](./images/method5.PNG)
 
-
-
-
-```
 
 ## การสร้างเมธอดที่รับพารามิเตอร์แบบไม่จำกัดจำนวนและชนิดด้วย Parameter arrays
 
@@ -356,12 +333,8 @@ class Program
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
+![method](./images/method6.PNG)
 
-
-
-
-```
 
 ## การสร้างเมธอดที่รับพารามิเตอร์แบบ Reference parameters
 
@@ -389,12 +362,8 @@ class Program
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
+![method](./images/method7.PNG)
 
-
-
-
-```
 
 ## การสร้างเมธอดที่รับพารามิเตอร์แบบ Output parameters
 
@@ -424,7 +393,7 @@ class Program
 
 ``` text
 
-
+error
 
 
 ```
@@ -457,7 +426,7 @@ class Program
 
 ``` text
 
-
+error ไท่ได้กำหนดค่าเริ่มต้นที่ i ใน method แยก
 
 
 ```
@@ -521,6 +490,34 @@ Console.WriteLine(14 % a);
 
 หมายเหตุ code snippet ด้านบนยังรันไม่ได้ ให้เขียนเป็นโปรแกรมที่รันได้
 
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 17;
+        double y = x / 4.0;
+        double z = y * y;
+        Console.WriteLine(y);
+        Console.WriteLine(z);
+
+        int a = 5;
+        int b = 4;
+        Console.WriteLine(a + b);	
+        Console.WriteLine(a + (b++));  
+        Console.WriteLine(a + b);	
+        Console.WriteLine(a + (++b));  
+        Console.WriteLine(a + b);	
+        Console.WriteLine(14 / a); 	
+        Console.WriteLine(14 % a);
+    }
+}
+```
+
+![](./images/arthirmatic1.PNG)
+
 ## ตัวดำเนินการกำหนดค่า (Assignment operators)
 
 ตัวดำเนินการกำหนดค่าในภาษา C#  มี 2 แบบคือ ตัวดำเนินการกำหนดค่าด้วยเครื่องหมาย = และตัวดำเนินการกำหนดค่าแบบผสม (Compound assignment operator)
@@ -569,26 +566,29 @@ Console.WriteLine(x);
 คำสั่ง ให้นักศึกษาเขียนโปรแกรมโดยใช้นิพจน์ดังต่อไปนี้ รันโปรแกรมเพื่อดูผลพร้อมทั้งอธิบายผลการทำงาน
 
 ```csharp
-int x = 6;
-int y = 4;
- 
-Console.WriteLine(y *= 2);
-int z = y = 3;
- 
-Console.WriteLine(z);
-Console.WriteLine(x |= 1);
-Console.WriteLine(x += 3);
-Console.WriteLine(x /= 2);
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int x = 6;
+        int y = 4;
+        
+        Console.WriteLine(y *= 2);
+        int z = y = 3;
+        
+        Console.WriteLine(z);
+        Console.WriteLine(x |= 1);
+        Console.WriteLine(x += 3);
+        Console.WriteLine(x /= 2);
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/arthirmatic2.PNG)
 
 คำถาม ถ้าเขียนเครื่องหมายตัวดำเนินการกำหนดค่าแบบผสมแยกจากกัน (เช่น เขียน  +=  เป็น + = ) จะทำได้หรือไม่ อย่างไร
 
@@ -605,16 +605,23 @@ result = operand1 ? operand2 : operand3
 คำสั่ง ให้นักศึกษาเขียนโปรแกรมโดยใช้นิพจน์ดังต่อไปนี้ รันโปรแกรมเพื่อดูผลพร้อมทั้งอธิบายผลการทำงาน
 
 ```csharp
-double GPA = 1.95;
-Console.WriteLine("You are " + (GPA >= 2.0 ? "pass" : "fall"));
+using System;
+
+class Program{
+    static void Main()
+    {
+        double GPA = 1.95;
+        Console.WriteLine("You are " + (GPA >= 2.0 ? "pass" : "fall"));
+    }
+}
+
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
 ``` text
 
-
-
+You are fall
 
 ```
 
@@ -629,23 +636,26 @@ Console.WriteLine("You are " + (GPA >= 2.0 ? "pass" : "fall"));
 คำสั่ง ให้นักศึกษาเขียนโปรแกรมโดยใช้นิพจน์ดังต่อไปนี้ รันโปรแกรมเพื่อดูผลพร้อมทั้งอธิบายผลการทำงาน
 
 ```csharp
-int x = 10, y = 5;
-Console.WriteLine("x > y : " + (x > y));	 
-Console.WriteLine("x < y : " + (x < y));	 
-Console.WriteLine("x >= y : " + (x >= y));   
-Console.WriteLine("x <= y : " + (x <= y));   
-Console.WriteLine("x == y : " + (x == y));   
-Console.WriteLine("x != y : " + (x != y));
+using System;
+
+class Program
+{
+    static void Main()
+    {
+    int x = 10, y = 5;
+    Console.WriteLine("x > y : " + (x > y));	 
+    Console.WriteLine("x < y : " + (x < y));	 
+    Console.WriteLine("x >= y : " + (x >= y));   
+    Console.WriteLine("x <= y : " + (x <= y));   
+    Console.WriteLine("x == y : " + (x == y));   
+    Console.WriteLine("x != y : " + (x != y));
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/condition.PNG)
 
 ## ตัวดำเนินการตรรกะ (Logical operators)
 
@@ -668,27 +678,30 @@ false |  false|    |        |          |       |
 คำสั่ง เขียนโปรแกรมจาก code snippet ด้านล่างนี้ให้สมบูรณ์ แล้วรันโปรแกรมพร้อมบันทึก ผลการทดลอง
 
 ```csharp
-bool a = true;
-bool b = false;
-Console.WriteLine(a && b);
-Console.WriteLine(a || b);
-Console.WriteLine(!b);
-Console.WriteLine(b || true);
-Console.WriteLine((9 > 7) ^ (a == b));
-Console.WriteLine((b != a)  ||  (a == b));
-Console.WriteLine((b != a)  &&  (a == b));
-Console.WriteLine((!a)  &&  (!b));
-Console.WriteLine((!a)  ||  (!b));
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        bool a = true;
+        bool b = false;
+        Console.WriteLine(a && b);
+        Console.WriteLine(a || b);
+        Console.WriteLine(!b);
+        Console.WriteLine(b || true);
+        Console.WriteLine((9 > 7) ^ (a == b));
+        Console.WriteLine((b != a)  ||  (a == b));
+        Console.WriteLine((b != a)  &&  (a == b));
+        Console.WriteLine((!a)  &&  (!b));
+        Console.WriteLine((!a)  ||  (!b));
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/Logical.PNG)
 
 ## ตัวดำเนินการไบนารี่ (Binary operators) หรือตัวดำเนินการระดับบิต (Bitwise Operators)
 
@@ -730,12 +743,7 @@ Console.WriteLine(a >> 1);
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/Binary.PNG)
 
 หมายเหตุ เพื่อการแสดงผลเป็นเลขฐานสองที่เข้าใจง่าย ทดลองเปลี่ยนรูปแบบการแสดงผลในบรรทัดที่ 8-10 ของ code ด้านบนเป็น code ต่อไปนี้
 Console.WriteLine("{0}",Convert.ToString (a << 1, 2).PadLeft(8,'0'));
@@ -748,22 +756,25 @@ Console.WriteLine("{0}",Convert.ToString (a << 1, 2).PadLeft(8,'0'));
 	คำสั่ง ให้เขียนโปรแกรมจาก code ต่อไปนี้ แล้วรันพร้อม
 
 ```csharp
-string hello = "Hello";
-string world = "World";
-string helloWorld = hello + world;
-Console.WriteLine(helloWorld); 
-string helloWorld555 = helloWorld + " " + 555;
-Console.WriteLine(helloWorld555);
+using System
+
+class Program
+{
+    static void Main()
+    {
+        string hello = "Hello";
+        string world = "World";
+        string helloWorld = hello + world;
+        Console.WriteLine(helloWorld);
+        string helloWorld555 = helloWorld + " " + 555;
+        Console.WriteLine(helloWorld555);
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/string.PNG)
 
 ## ตัวดำเนินการแปลงชนิดข้อมูล (Type conversion operators)
 
@@ -790,21 +801,24 @@ Console.WriteLine(helloWorld555);
   
 
 ```csharp
-int myInt = 5;
-Console.WriteLine(myInt);  
-long myLong = myInt;
-Console.WriteLine(myLong);  
-Console.WriteLine(myLong + myInt); 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int myInt = 5;
+        Console.WriteLine(myInt);  
+        long myLong = myInt;
+        Console.WriteLine(myLong);  
+        Console.WriteLine(myLong + myInt); 
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/ImplicitType.PNG)
 
 ## การแปลงชนิดข้อมูลแบบโดยชัดแจ้ง (Explicit Type Conversion)
 
@@ -814,28 +828,31 @@ Console.WriteLine(myLong + myInt);
 คำสั่ง ให้นักศึกษา ทดลองเขียนโปรแกรมโดยใช้ code snippet ต่อไปนี้ พร้อมรันและบันทึกผลการทำงานของโปรแกรม 
 
 ```csharp
-double myDouble = 9.9d;
-Console.WriteLine(myDouble);  
- 
-long myLong = (long)myDouble;
-Console.WriteLine(myLong);  
- 
-myDouble = 9e9d;  
-Console.WriteLine(myDouble);  
- 
-int myInt = (int)myDouble;
-Console.WriteLine(myInt); 
-Console.WriteLine(int.MinValue);
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double myDouble = 9.9d;
+        Console.WriteLine(myDouble);  
+        
+        long myLong = (long)myDouble;
+        Console.WriteLine(myLong);  
+        
+        myDouble = 9e9d;  
+        Console.WriteLine(myDouble);  
+        
+        int myInt = (int)myDouble;
+        Console.WriteLine(myInt); 
+        Console.WriteLine(int.MinValue);
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/Explicit.PNG)
 
 ## การสูญเสียข้อมูลระหว่างการแปลงชนิด
 
@@ -844,30 +861,33 @@ Console.WriteLine(int.MinValue);
 คำสั่ง ให้นักศึกษา ทดลองเขียนโปรแกรมโดยใช้ code snippet ต่อไปนี้ พร้อมรันและบันทึกผลการทำงานของโปรแกรม 
 
 ```csharp
-long myLong = long.MaxValue;
-int myInt = (int)myLong;   // Explicit conversion
+using System;
 
-float heightInMeters = 1.74f; // Explicit conversion
-double maxHeight = heightInMeters; // Implicit
-double minHeight = (double)heightInMeters; // Explicit
-float actualHeight = (float)maxHeight; // Explicit
+class Program
+{
+    static void Main()
+    {
+        long myLong = long.MaxValue;
+        int myInt = (int)myLong;   // Explicit conversion
 
-Console.WriteLine(myLong); 
-Console.WriteLine(myInt); 
-Console.WriteLine(heightInMeters); 
-Console.WriteLine(maxHeight); 
-Console.WriteLine(minHeight); 
-Console.WriteLine(actualHeight);
+        float heightInMeters = 1.74f; // Explicit conversion
+        double maxHeight = heightInMeters; // Implicit
+        double minHeight = (double)heightInMeters; // Explicit
+        float actualHeight = (float)maxHeight; // Explicit
+
+        Console.WriteLine(myLong); 
+        Console.WriteLine(myInt); 
+        Console.WriteLine(heightInMeters); 
+        Console.WriteLine(maxHeight); 
+        Console.WriteLine(minHeight); 
+        Console.WriteLine(actualHeight);
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/การสูญเสียข้อมูลระหว่างการแปลงชนิด.PNG)
 
 ## การบังคับให้เกิด Exception ในกรณีที่มีความผิดปกติในการแปลงชนิดข้อมูล
 
@@ -876,40 +896,46 @@ Console.WriteLine(actualHeight);
 คำสั่ง ให้นักศึกษา ทดลองเขียนโปรแกรมโดยใช้ code snippet ต่อไปนี้ พร้อมรันและบันทึกผลการทำงานของโปรแกรม 
 
 ```csharp
-double d = 5e9d;  
-Console.WriteLine(d);  
-int i = (int)d;  
-Console.WriteLine(i);
+ีusing System;
+
+class Program
+{
+    static void Main()
+    {
+        double d = 5e9d;  
+        Console.WriteLine(d);  
+        int i = (int)d;  
+        Console.WriteLine(i);
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/Exception.PNG)
 
 แก้โปรแกรม โดยเพิ่มการตรวจสอบการแปลงชนิดข้อมูลด้วยคีย์เวิร์ด checked
 
 คำสั่ง ให้นักศึกษา ทดลองเขียนโปรแกรมโดยใช้ code snippet ต่อไปนี้ พร้อมรันและบันทึกผลการทำงานของโปรแกรม 
 
 ```csharp
-double d = 5e9d;  
-Console.WriteLine(d);  
-int i = checked((int)d);  
-Console.WriteLine(i);
+ีusing System;
+
+class Program
+{
+    static void Main()
+    {
+        double d = 5e9d;  
+        Console.WriteLine(d);  
+        int i = checked((int)d);  
+        Console.WriteLine(i);
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/Exception.PNG)
 
 โปรแกรมข้างบน มี exception เกิดขึ้น  ให้ลองเพิ่มประโยค  try..catch เพื่อจัดการกับ exception นั้น
 
@@ -920,44 +946,51 @@ Console.WriteLine(i);
 คำสั่ง ให้นักศึกษา ทดลองเขียนโปรแกรมโดยใช้ code snippet ต่อไปนี้ พร้อมรันและบันทึกผลการทำงานของโปรแกรม 
 
 ```csharp
-int a = 2;
-string myString = a.ToString();
-Console.WriteLine(myString);
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 2;
+        string myString = a.ToString();
+        Console.WriteLine(myString);
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/tranferstring.PNG)
 
 การแปลง ToString() จะมีลักษณะ implicit type conversion ได้ เมื่อเรานำข้อมูลชนิดต่างๆ มาใช้ร่วมกับเมธอดที่ทำงานกับ string เช่นเมธอด Console.WriteLine() ซึ่ง Console.WriteLine() จะทำการแปลงข้อมูลทุกชนิด (ที่สามารถแปลงได้) ไปเป็น string เพื่อทำการแสดงผลออกหน้าจอ
 
 คำสั่ง ให้นักศึกษา ทดลองเขียนโปรแกรมโดยใช้ code snippet ต่อไปนี้ พร้อมรันและบันทึกผลการทำงานของโปรแกรม 
 
 ```csharp
-int a = 2;
-float f = 3.5f;
-double d = 4.99d;
-decimal money = 1254841354;
-Console.WriteLine( a+" "+ f+ " "+ d + " " + money);
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int a = 2;
+        float f = 3.5f;
+        double d = 4.99d;
+        decimal money = 1254841354;
+        Console.WriteLine( a+" "+ f+ " "+ d + " " + money);
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](./images/stringshow.PNG)
 
 ## แบบฝึกหัด
 
 1. เขียนโปรแกรม โดยรับอินพุตมาเป็นตัวเลข แล้วมีเมธอดหนึ่ง รับตัวเลขนั้นไปพิจารณา แล้วตอบกลับมาว่า เป็นเลขคู่หรือเลขคี่
+
 2. เขียนโปรแกรม โดยมีเมธอดที่วนรอบหาตัวเลขที่หารด้วย 7 ลงตัว โดยเมธอดนั้นรับพารามิเตอร์เป็นค่าตัวเลขเริ่มต้นและสิ้นสุด
 3. เขียนโปรแกรม โดยมีเมธอดที่บอกว่าตัวเลขตั้งแต่ 1 - 100 มีเลขใดบ้าง ที่บิตที่ 5 มีค่าเป็น 1
 4. เขียนโปรแกรม โดยมีเมธอดคำนวณพื้นที่สี่เหลี่ยมคางหมู โดยรับพารามิเตอร์เป็น ด้านกว้าง ยาว และ ความสูง
