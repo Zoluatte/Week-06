@@ -896,7 +896,7 @@ class Program
 คำสั่ง ให้นักศึกษา ทดลองเขียนโปรแกรมโดยใช้ code snippet ต่อไปนี้ พร้อมรันและบันทึกผลการทำงานของโปรแกรม 
 
 ```csharp
-ีusing System;
+using System;
 
 class Program
 {
@@ -919,7 +919,7 @@ class Program
 คำสั่ง ให้นักศึกษา ทดลองเขียนโปรแกรมโดยใช้ code snippet ต่อไปนี้ พร้อมรันและบันทึกผลการทำงานของโปรแกรม 
 
 ```csharp
-ีusing System;
+using System;
 
 class Program
 {
@@ -991,7 +991,162 @@ class Program
 
 1. เขียนโปรแกรม โดยรับอินพุตมาเป็นตัวเลข แล้วมีเมธอดหนึ่ง รับตัวเลขนั้นไปพิจารณา แล้วตอบกลับมาว่า เป็นเลขคู่หรือเลขคี่
 
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter number : ");
+        int num = int.Parse(Console.ReadLine());
+        Console.WriteLine($"The number is {EvenOdd(num)}")
+    }
+
+    static string EvenOdd(int n)
+    {
+        return n % 2 == 0 ? "even" : "odd";
+    }
+}
+```
+
 2. เขียนโปรแกรม โดยมีเมธอดที่วนรอบหาตัวเลขที่หารด้วย 7 ลงตัว โดยเมธอดนั้นรับพารามิเตอร์เป็นค่าตัวเลขเริ่มต้นและสิ้นสุด
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter number Begin: ");
+        int b = int.Parse(Console.ReadLine());
+        Console.Write("Enter number last: ");
+        int l = int.Parse(Console.ReadLine());
+
+        finddiv7(b, l);
+    }
+    static void finddiv7(int b, int l)
+    {
+        for(int i = b; i <= l; i++)
+        {
+            if(i % 7 == 0)
+                Console.Write($"{i} ");
+        }
+    }
+}
+```
+
 3. เขียนโปรแกรม โดยมีเมธอดที่บอกว่าตัวเลขตั้งแต่ 1 - 100 มีเลขใดบ้าง ที่บิตที่ 5 มีค่าเป็น 1
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        for (int dec = 1; dec <= 100; dec++)
+        {
+            string bin = null;
+            int ans;
+            int num = dec;
+            int check = 0;
+
+            while (num >= 1)
+            {
+                ans = num % 2;
+                bin = ans.ToString() + bin;
+                num /= 2;
+            }
+                if (bin.Length > 4)
+            {
+                if (bin.Length > 5)
+                {
+                    if (bin.Length > 6)
+                    {
+                        //Console.WriteLine($"Decimal  : {dec}\nBinary : {bin}");
+                        //Console.WriteLine(bin.Substring(2, 1));                            check = int.Parse(bin.Substring(2, 1));
+                        checkBit5(check, dec);
+                        //digit5[dec] = check;
+                        continue;
+                    }
+                    //Console.WriteLine($"Decimal  : {dec}\nBinary : {bin}");
+                    //Console.WriteLine(bin.Substring(1, 1));
+                    check = int.Parse(bin.Substring(1, 1));
+                    checkBit5(check, dec);
+                    //digit5[dec] = check;
+                    continue;
+                }
+                //Console.WriteLine($"Decimal  : {dec}\nBinary : {bin}");
+                //Console.WriteLine(bin.Substring(0, 1));
+                check = int.Parse(bin.Substring(0, 1));
+                checkBit5(check, dec);
+
+            }
+        }
+
+        static void checkBit5(int bin, int dec)
+        {
+            if(bin == 1)
+            {
+                Console.WriteLine($"Decimal  : {dec}  Binary : {bin}");
+            }
+        }
+    }
+}
+```
+
 4. เขียนโปรแกรม โดยมีเมธอดคำนวณพื้นที่สี่เหลี่ยมคางหมู โดยรับพารามิเตอร์เป็น ด้านกว้าง ยาว และ ความสูง
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter Width: ");
+        int w = int.Parse(Console.ReadLine());
+        Console.Write("Enter Length: ");
+        int l = int.Parse(Console.ReadLine());
+        Console.Write("Enter Heigth: ");
+        int h = int.Parse(Console.ReadLine());
+
+    }
+
+    static void trapezoid(int w, int l, int h){
+        return 0.5 * (w + l) * h;
+    }
+}
+```
+
 5. เขียนโปรแกรม โดยมีเมธอดคำนวณน้ำหนักของคนบนดวงจันทร์ โดยรับอินพุตเป็นน้ำหนัก มีทศนิยม 1 หลัก
+
+```csharp
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter mass in earth: ");
+        /*
+        การชั่งน้ำหนักจากเครื่องชั่งน้ำหนักนั้นเป็นการชั่งมวล ไม่ใช่น้ำหนักจริงๆบนโลก
+        การหาน้ำหนักบนโลก จะเป็น W = mg ตามกฎของนิวตัน
+        W คือน้ำหนัก(N)
+        m คือมวล(kg)
+        g คือแรงดึงดูดของโลก มีค่า = 9.81 m/s^2
+        */
+        float m = float.Parse(Console.ReadLine());
+
+        weigth_Moon(m)
+    }
+
+    static void weigth_Moon(float mass)
+    {
+        //ค่า g บนโลกจะมากกว่าบนดวงจันทร์ 6 เท่า
+        Console.WriteLine("Weigth in moon is {0:F1}", mass * (9.8/6))
+    }
+}
+```
