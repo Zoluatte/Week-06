@@ -10,15 +10,21 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int val;   // do not initial value
-            refMethod(out val);
-            Console.WriteLine(val);
-            Console.ReadLine();
-        }
+            int x = 17;
+            double y = x / 4.0;
+            double z = y * y;
+            Console.WriteLine(y);
+            Console.WriteLine(z);
 
-        static void refMethod(out int i)
-        {
-            i = i + 1;
+            int a = 5;
+            int b = 4;
+            Console.WriteLine(a + b);
+            Console.WriteLine(a + (b++));
+            Console.WriteLine(a + b);
+            Console.WriteLine(a + (++b));
+            Console.WriteLine(a + b);
+            Console.WriteLine(14 / a);
+            Console.WriteLine(14 % a);
 
         }
     }
