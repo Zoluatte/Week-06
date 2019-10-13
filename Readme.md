@@ -1,2 +1,3 @@
-# Computer Laboratory I
+ # ใบงานการทดลอง
+## [ใบงาน](./Week-06.md)
   
