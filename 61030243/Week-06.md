@@ -1019,6 +1019,7 @@ class Program
 {
     static void Main()
     {
+        Console.WriteLine("Divide seven")
         Console.Write("Enter number Begin: ");
         int b = int.Parse(Console.ReadLine());
         Console.Write("Enter number last: ");
@@ -1106,17 +1107,18 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Enter Width: ");
-        int w = int.Parse(Console.ReadLine());
-        Console.Write("Enter Length: ");
-        int l = int.Parse(Console.ReadLine());
-        Console.Write("Enter Heigth: ");
+        Console.Write("Enter base1: ");
+        int b1 = int.Parse(Console.ReadLine());
+        Console.Write("Enter base2: ");
+        int b2 = int.Parse(Console.ReadLine());
+        Console.Write("Enter Height: ");
         int h = int.Parse(Console.ReadLine());
 
+        trapezide(b1, b2, h)
     }
 
-    static void trapezoid(int w, int l, int h){
-        return 0.5 * (w + l) * h;
+    static void trapezoid(int b1, int b2, int h){
+        Console.WriteLine("Area trapezide is " + .5 * h * (b1 + b2) + "cm^2" );
     }
 }
 ```
