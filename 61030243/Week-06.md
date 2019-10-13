@@ -426,7 +426,7 @@ class Program
 
 ``` text
 
-error ไท่ได้กำหนดค่าเริ่มต้นที่ i ใน method แยก
+error ไม่ได้กำหนดค่าเริ่มต้นที่ i ใน method refMethod
 
 
 ```
@@ -592,6 +592,12 @@ class Program
 
 คำถาม ถ้าเขียนเครื่องหมายตัวดำเนินการกำหนดค่าแบบผสมแยกจากกัน (เช่น เขียน  +=  เป็น + = ) จะทำได้หรือไม่ อย่างไร
 
+```
+
+ไม่ได้เนื่องจากคอมพิวเติร์จะเห็นว่ามี arthirmatic operater 2 อยู่ด้วยกันจึงทำให้เกิด error ในบรรทัดที่มีคำสั่งนั้น
+
+```
+
 ## ตัวดำเนินการกำหนดค่าแบบแบบมีเงื่อนไข (Conditional Assignment Operators)
 
 ตัวดำเนินการกำหนดค่าแบบแบบมีเงื่อนไข ใช้เครื่องหมายในการดำเนินการคือ ?: โดยมีรูปแบบเป็น
@@ -729,16 +735,25 @@ x |	y | ~x | x & y | x \| y | x ^ y
 คำสั่ง เขียนโปรแกรมจาก code ด้านล่างนี้ให้สมบูรณ์ แล้วรันโปรแกรมพร้อมบันทึก ผลการทดลอง
 
 ```csharp
-byte a = 3;    	 	 
-byte b = 5;       	 
- 
-Console.WriteLine(a | b);    
-Console.WriteLine(a & b);    
-Console.WriteLine(a ^ b);    
-Console.WriteLine(~a & b);   
-Console.WriteLine(a << 1);   
-Console.WriteLine(a << 2);   
-Console.WriteLine(a >> 1); 
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        byte a = 3;
+        byte b = 5;
+        
+        Console.WriteLine(a | b);
+        Console.WriteLine(a & b);
+        Console.WriteLine(a ^ b);
+        Console.WriteLine(~a & b);
+        Console.WriteLine(a << 1);
+        Console.WriteLine(a << 2);
+        Console.WriteLine(a >> 1);
+        //Console.WriteLine("{0}",Convert.ToString (a << 1, 2).PadLeft(8,'0'));
+    }
+}
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
@@ -756,7 +771,7 @@ Console.WriteLine("{0}",Convert.ToString (a << 1, 2).PadLeft(8,'0'));
 	คำสั่ง ให้เขียนโปรแกรมจาก code ต่อไปนี้ แล้วรันพร้อม
 
 ```csharp
-using System
+using System;
 
 class Program
 {
@@ -978,7 +993,7 @@ class Program
         float f = 3.5f;
         double d = 4.99d;
         decimal money = 1254841354;
-        Console.WriteLine( a+" "+ f+ " "+ d + " " + money);
+        Console.WriteLine(a +" "+ f + " "+ d + " " + money);
     }
 }
 ```
