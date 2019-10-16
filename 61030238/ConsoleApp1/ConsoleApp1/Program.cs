@@ -8,35 +8,27 @@ namespace ConsoleApp1
 {
     class Program
     {
-
         static void Main(string[] args)
         {
 
-            for (int t = 0; t <= 100; t++)
-            {
-                String aa = "";
-                while (t > 0)
-                {
-                    if (t >= 2)
-                    {
-                        aa = (t % 2) + aa;
-                    }
-                    else
-                    {
-                        aa = t + aa;
-                    }
-                    t = t / 2;
-
-
-                }
-
-
-                int n = int.Parse(aa);
-                Console.WriteLine(n);
-            }
+            double a, b, c, d, f;
+            double v = 0.5;
+            Console.WriteLine("พื้นที่คางหมู");
+            Console.WriteLine("ความสูง");
+            a = double.Parse(Console.ReadLine());
+            Console.WriteLine("ด้านคู่ขนานด้านที่1");
+            c = double.Parse(Console.ReadLine());
+            Console.WriteLine("ด้านคู่ขนานด้านที่2");
+            d = double.Parse(Console.ReadLine());
+            b = c + d;
+            f = add(a, b, v);
+            Console.WriteLine(f);
         }
+
+        static double add(double a, double b, double v)
+        {
+            return v * (a * b);
+        }
+
     }
 }
-
-
-
