@@ -11,28 +11,34 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            double a;
-            Console.WriteLine("ป้อนค่าa");
-            a = double.Parse(Console.ReadLine());
-
-            add(a);
+            int a, e;
+            Console.WriteLine("ป้อนค่าเริ่มต้น");
+            a = int.Parse(Console.ReadLine());
+            Console.WriteLine("ป้อนค่สิ้นสุด");
+            e = int.Parse(Console.ReadLine());
+            add(a, e);
             Console.ReadLine();
         }
 
-        static double add(double a)
+        static int add(int a, int e)
         {
             double c;
-            c = a % 2;
+            while (a < e)
+                a = a + 1;
+            c = a % 7;
             if (c == 0)
             {
-                Console.WriteLine("เลขคู่");
+                Console.WriteLine(a);
             }
             else
             {
-                Console.WriteLine("เลขคี่");
+                Console.Write("");
             }
-            return c;
-        }
 
+            return a;
+
+        }
     }
+
 }
+
