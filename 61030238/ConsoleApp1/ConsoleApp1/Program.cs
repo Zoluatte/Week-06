@@ -10,11 +10,29 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int a = 2;
-            float f = 3.5f;
-            double d = 4.99d;
-            decimal money = 1254841354;
-            Console.WriteLine(a + " " + f + " " + d + " " + money);
+
+            double a;
+            Console.WriteLine("ป้อนค่าa");
+            a = double.Parse(Console.ReadLine());
+
+            add(a);
+            Console.ReadLine();
         }
+
+        static double add(double a)
+        {
+            double c;
+            c = a % 2;
+            if (c == 0)
+            {
+                Console.WriteLine("เลขคู่");
+            }
+            else
+            {
+                Console.WriteLine("เลขคี่");
+            }
+            return c;
+        }
+
     }
 }
