@@ -11,24 +11,21 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
 
-            double a, b, c, d, f;
-            double v = 0.5;
-            Console.WriteLine("พื้นที่คางหมู");
-            Console.WriteLine("ความสูง");
+            double a, c;
+            double v = 1 / 6;
+            Console.WriteLine("น้ำหนักเรา");
+
             a = double.Parse(Console.ReadLine());
-            Console.WriteLine("ด้านคู่ขนานด้านที่1");
-            c = double.Parse(Console.ReadLine());
-            Console.WriteLine("ด้านคู่ขนานด้านที่2");
-            d = double.Parse(Console.ReadLine());
-            b = c + d;
-            f = add(a, b, v);
-            Console.WriteLine(f);
+
+            c = add(a, v);
+            Console.WriteLine(c);
         }
 
-        static double add(double a, double b, double v)
+        static double add(double a, double v)
         {
-            return v * (a * b);
+            return a * v;
         }
-
     }
+
 }
+
