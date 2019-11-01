@@ -12,16 +12,17 @@ namespace Lab6
     {
         static void Main(string[] args)
         {
-            long c = Factorial(5);
-            Console.WriteLine("Factorial of 5 = {0}", c);
+            object[] myObjArray = { 2, 'b', 1000.05d, "Hello World" };
+            useParams(myObjArray);
+            useParams("IE.Tech.", "KMITL", 2017);
             Console.ReadLine();
         }
 
-        static long Factorial(int n)
+        static void useParams(params object[] list)
         {
-            if (n == 0)  // Factorial 0 = 1
-                return 1;
-            return n * Factorial(n - 1);
+            foreach (object o in list)
+                Console.Write(o + " ");
+            Console.WriteLine();
 
         }
     }
