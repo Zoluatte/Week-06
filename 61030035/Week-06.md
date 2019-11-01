@@ -323,7 +323,7 @@ class Program
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
-![](image/07.PNG)`
+![](image/07.PNG)
 
 ## การสร้างเมธอดที่รับพารามิเตอร์แบบ Reference parameters
 
@@ -351,12 +351,7 @@ class Program
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](image/08.PNG)
 
 ## การสร้างเมธอดที่รับพารามิเตอร์แบบ Output parameters
 
