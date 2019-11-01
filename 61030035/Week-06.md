@@ -583,12 +583,12 @@ Console.WriteLine("x != y : " + (x != y));
 
 <!--  หมายเหตุ ยกเลิก comment นี้แล้วตอบคำถามลงในตาราง 
 
-|   x |   y	  | !x | x && y | x \|\| y | x ^ y |
-|-----|-------|----|--------|----------|-------|
-true  | true  |    |        |          |       |     
-true  | false |    |        |          |       |
-false | true  |    |        |          |       |
-false |  false|    |        |          |       |
+|   x |   y	  | !x  | x && y | x \|\| y | x ^ y |
+|-----|-------|---- |--------|----------|-------|
+true  | true  |false|true    |true      |false  |     
+true  | false |false|false   |true      |true   |
+false | true  |true |false   |true      | true  |
+false | false |true |false   |false     |false  |
 
 -->
 
