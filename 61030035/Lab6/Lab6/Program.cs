@@ -12,11 +12,11 @@ namespace Lab6
     {
         static void Main(string[] args)
         {
-            double d = 5e9d;
-            Console.WriteLine(d);
-            int i = checked((int)d);
-            Console.WriteLine(i);
-
+            int a = 2;
+            float f = 3.5f;
+            double d = 4.99d;
+            decimal money = 1254841354;
+            Console.WriteLine(a + " " + f + " " + d + " " + money);
         }
     }
 }

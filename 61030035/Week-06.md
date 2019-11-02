@@ -809,13 +809,7 @@ Console.WriteLine(myString);
 ```
 
 ➢ รันโปรแกรมและบันทึกผล
-
-``` text
-
-
-
-
-```
+![](image/22.PNG)
 
 การแปลง ToString() จะมีลักษณะ implicit type conversion ได้ เมื่อเรานำข้อมูลชนิดต่างๆ มาใช้ร่วมกับเมธอดที่ทำงานกับ string เช่นเมธอด Console.WriteLine() ซึ่ง Console.WriteLine() จะทำการแปลงข้อมูลทุกชนิด (ที่สามารถแปลงได้) ไปเป็น string เพื่อทำการแสดงผลออกหน้าจอ
 
@@ -831,12 +825,7 @@ Console.WriteLine( a+" "+ f+ " "+ d + " " + money);
 
 ➢ รันโปรแกรมและบันทึกผล
 
-``` text
-
-
-
-
-```
+![](image/23.PNG)
 
 ## แบบฝึกหัด
 
