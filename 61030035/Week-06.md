@@ -585,10 +585,10 @@ Console.WriteLine("x != y : " + (x != y));
 
 |   x |   y	  | !x  | x && y | x \|\| y | x ^ y |
 |-----|-------|---- |--------|----------|-------|
-true  | true  |false|true    |true      |false  |     
-true  | false |false|false   |true      |true   |
-false | true  |true |false   |true      | true  |
-false | false |true |false   |false     |false  |
+|true | true  |false|true    |true      |false  |     
+|true | false |false|false   |true      |true   |
+|false| true  |true |false   |true      |true   |
+|false| false |true |false   |false     |false  |
 
 -->
 
