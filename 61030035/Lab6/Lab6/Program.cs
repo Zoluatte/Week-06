@@ -12,16 +12,11 @@ namespace Lab6
     {
         static void Main(string[] args)
         {
-            byte a = 3;
-            byte b = 5;
+            double d = 5e9d;
+            Console.WriteLine(d);
+            int i = checked((int)d);
+            Console.WriteLine(i);
 
-            Console.WriteLine(a | b);
-            Console.WriteLine(a & b);
-            Console.WriteLine(a ^ b);
-            Console.WriteLine(~a & b);
-            Console.WriteLine(a << 1);
-            Console.WriteLine(a << 2);
-            Console.WriteLine(a >> 1);
         }
     }
 }
