@@ -581,7 +581,7 @@ Console.WriteLine("x != y : " + (x != y));
 
 ![](./images/table-lab-06-06.png)
 
-<!--  หมายเหตุ ยกเลิก comment นี้แล้วตอบคำถามลงในตาราง 
+  หมายเหตุ ยกเลิก comment นี้แล้วตอบคำถามลงในตาราง 
 
 |   x |   y	  | !x  | x && y | x \|\| y | x ^ y |
 |-----|-------|---- |--------|----------|-------|
@@ -590,7 +590,7 @@ Console.WriteLine("x != y : " + (x != y));
 |false| true  |true |false   |true      |true   |
 |false| false |true |false   |false     |false  |
 
--->
+
 
 คำสั่ง เขียนโปรแกรมจาก code snippet ด้านล่างนี้ให้สมบูรณ์ แล้วรันโปรแกรมพร้อมบันทึก ผลการทดลอง
 
