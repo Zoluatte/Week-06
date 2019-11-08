@@ -142,7 +142,7 @@ class Program
 
 ``` text
 
-![](./images/1.PNG)
+![](images/1.PNG)
 
 
 ```
