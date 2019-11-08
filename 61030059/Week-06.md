@@ -142,7 +142,7 @@ class Program
 
 ``` text
 
-![](./images/1.png)
+![](./images/1.PNG)
 
 
 ```
@@ -178,7 +178,7 @@ class Program
 
 ``` text
 
-![](./images/2.png)
+![](./images/2.PNG)
 
 
 ```
@@ -219,7 +219,7 @@ class Program
 ``` text
 
 
-![](./images/3.png)
+![](./images/3.PNG)
 
 ```
 
@@ -255,7 +255,7 @@ class Program
 
 ``` text
 
-![](./images/4.png)
+![](./images/4.PNG)
 
 
 ```
@@ -287,7 +287,7 @@ class Program
 
 ``` text
 
-![](./images/5.png)
+![](./images/5.PNG)
 
 
 ```
@@ -323,7 +323,7 @@ class Program
 
 ``` text
 
-![](./images/6.png)
+![](./images/6.PNG)
 
 
 ```
@@ -358,7 +358,7 @@ class Program
 
 ``` text
 
-![](./images/7.png)
+![](./images/7.PNG)
 
 
 ```
@@ -391,7 +391,7 @@ class Program
 
 ``` text
 
-![](./images/8.png)
+![](./images/8.PNG)
 
 
 ```
@@ -424,7 +424,7 @@ class Program
 
 ``` text
 
-![](./images/9.png)
+![](./images/9.PNG)
 
 
 ```
@@ -457,7 +457,7 @@ class Program
 
 ``` text
 
-![](./images/10.png)
+![](./images/10.PNG)
 
 
 ```
@@ -467,7 +467,7 @@ class Program
 ```csharp
 int val; // uninitialized variable
 ```
-![](./images/11.png)
+![](./images/11.PNG)
 
 ## หมายเหตุ
 
@@ -521,7 +521,9 @@ Console.WriteLine(14 % a);
 ```
 
 หมายเหตุ code snippet ด้านบนยังรันไม่ได้ ให้เขียนเป็นโปรแกรมที่รันได้
- ![](./images/12.png)
+ 
+ ![](./images/12.PNG)
+ 
 ## ตัวดำเนินการกำหนดค่า (Assignment operators)
 
 ตัวดำเนินการกำหนดค่าในภาษา C#  มี 2 แบบคือ ตัวดำเนินการกำหนดค่าด้วยเครื่องหมาย = และตัวดำเนินการกำหนดค่าแบบผสม (Compound assignment operator)
@@ -586,7 +588,7 @@ Console.WriteLine(x /= 2);
 
 ``` text
 
-![](./images/13.png)
+![](./images/13.PNG)
 
 
 ```
@@ -615,7 +617,7 @@ Console.WriteLine("You are " + (GPA >= 2.0 ? "pass" : "fall"));
 ``` text
 
 
-![](./images/14.png)
+![](./images/14.PNG)
 
 
 ```
@@ -644,7 +646,7 @@ Console.WriteLine("x != y : " + (x != y));
 
 ``` text
 
-![](./images/15.png)
+![](./images/15.PNG)
 
 
 ```
@@ -687,7 +689,7 @@ Console.WriteLine((!a)  ||  (!b));
 
 ``` text
 
-![](./images/16.png)
+![](./images/16.PNG)
 
 
 ```
@@ -734,7 +736,7 @@ Console.WriteLine(a >> 1);
 
 ``` text
 
-![](./images/17.png)
+![](./images/17.PNG)
 
 
 ```
@@ -762,7 +764,7 @@ Console.WriteLine(helloWorld555);
 
 ``` text
 
-![](./images/18.png)
+![](./images/18.PNG)
 
 
 ```
@@ -803,7 +805,7 @@ Console.WriteLine(myLong + myInt);
 
 ``` text
 
-![](./images/19.png)
+![](./images/19.PNG)
 
 
 ```
@@ -835,7 +837,7 @@ Console.WriteLine(int.MinValue);
 
 ``` text
 
-![](./images/20.png)
+![](./images/20.PNG)
 
 
 ```
@@ -867,7 +869,7 @@ Console.WriteLine(actualHeight);
 
 ``` text
 
-![](./images/21.png)
+![](./images/21.PNG)
 
 
 ```
@@ -889,7 +891,7 @@ Console.WriteLine(i);
 
 ``` text
 
-![](./images/22.png)
+![](./images/22.PNG)
 
 
 ```
@@ -909,7 +911,7 @@ Console.WriteLine(i);
 
 ``` text
 
-![](./images/23.png)
+![](./images/23.PNG)
 
 
 ```
@@ -932,7 +934,7 @@ Console.WriteLine(myString);
 
 ``` text
 
-![](./images/24.png)
+![](./images/24.PNG)
 
 
 ```
@@ -954,7 +956,7 @@ Console.WriteLine( a+" "+ f+ " "+ d + " " + money);
 ``` text
 
 
-![](./images/25.png)
+![](./images/25.PNG)
 
 ```
 
@@ -962,15 +964,15 @@ Console.WriteLine( a+" "+ f+ " "+ d + " " + money);
 
 1. เขียนโปรแกรม โดยรับอินพุตมาเป็นตัวเลข แล้วมีเมธอดหนึ่ง รับตัวเลขนั้นไปพิจารณา แล้วตอบกลับมาว่า เป็นเลขคู่หรือเลขคี่
 
-![](./images/26.png)
+![](./images/26.PNG)
 
 2. เขียนโปรแกรม โดยมีเมธอดที่วนรอบหาตัวเลขที่หารด้วย 7 ลงตัว โดยเมธอดนั้นรับพารามิเตอร์เป็นค่าตัวเลขเริ่มต้นและสิ้นสุด
 
-![](./images/27.png)
+![](./images/27.PNG)
 
 3. เขียนโปรแกรม โดยมีเมธอดที่บอกว่าตัวเลขตั้งแต่ 1 - 100 มีเลขใดบ้าง ที่บิตที่ 5 มีค่าเป็น 1
-![](./images/28.png)
+![](./images/28.PNG)
 4. เขียนโปรแกรม โดยมีเมธอดคำนวณพื้นที่สี่เหลี่ยมคางหมู โดยรับพารามิเตอร์เป็น ด้านกว้าง ยาว และ ความสูง
-![](./images/30.png)
+![](./images/30.PNG)
 5. เขียนโปรแกรม โดยมีเมธอดคำนวณน้ำหนักของคนบนดวงจันทร์ โดยรับอินพุตเป็นน้ำหนัก มีทศนิยม 1 หลัก
-![](./images/29.png)
+![](./images/29.PNG)
